@@ -1,0 +1,38 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "globals": {
+    "__filePath": "readonly",
+    "__require": "readonly",
+    "__transformPath": "readonly"
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@babel"
+  ],
+  "rules": {
+    // to avoid error
+    "template-curly-spacing" : "off",
+    "indent" : "off",
+    // to avoid error
+    "arrow-parens": [ "error", "always" ],
+    "comma-dangle": [ "error", "never" ],
+    "linebreak-style": [ "error", "unix" ],
+    "no-console": "warn",
+    "no-debugger": "warn",
+    "no-unused-vars": "warn",
+    "quote-props": [ "error", "always" ],
+    "quotes": [ "warn", "single" ],
+    "semi": [ "error", "never" ]
+  }
+}
+

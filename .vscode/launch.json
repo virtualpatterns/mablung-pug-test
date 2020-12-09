@@ -1,0 +1,35 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch ...",
+      "autoAttachChildProcesses": false,
+      "internalConsoleOptions": "openOnSessionStart",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/distributable-commonjs/sandbox/impy.cjs",
+      "skipFiles": [ "<node_internals>/**" ],
+      "stopOnEntry": false,
+      "args": []
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Test ...",
+      "preLaunchTask": "build",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/ava",
+      "runtimeArgs": [
+        "--serial",
+        "distributable-commonjs/test/library/scenario.test.cjs"
+      ],
+      "outputCapture": "std",
+      "skipFiles": [
+        "<node_internals>/**/*.js"
+      ]
+    } 
+  ]
+}

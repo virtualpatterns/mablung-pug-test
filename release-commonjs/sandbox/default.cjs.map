@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../source/sandbox/default.js"],"names":[],"mappings":";;;;;;eAAe;AAAE,OAAK;AAAP,C","sourcesContent":["export default { 'a': 1 }"],"file":"default.cjs"}
